@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>Examples</title>
+			<script src = "examples.js" defer></script>
+			<link rel="stylesheet" href="example_styles.css">
+			
+			<style>
+				  body {
+				    margin: 10px
+				  }
+			</style>
+		
+	</head>
+	<body>
+		
+
+	</body>
+</html>

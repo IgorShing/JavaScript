@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+function Machine(){
+	var enabled = false;
+	
+	this.enable = function(){
+		enabled = true;
+	};
+	
+	this.enable = function(){
+		enabled = true;
+	}
+}
+

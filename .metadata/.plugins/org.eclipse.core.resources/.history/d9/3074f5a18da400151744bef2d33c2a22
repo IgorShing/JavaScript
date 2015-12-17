@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+function Machine(){
+	var enabled = false;
+	
+	this.enable = function(){
+		enabled = true;
+	};
+	
+	this.enable = function(){
+		enabled = true;
+	}
+}
+
+function CoffeeMachine(power){
+	
+	var waterAmount = 0;
+	
+	this.setWaterAmount = function(amount){
+		waterAmount = amount;
+	}
+	
+	
+	
+}

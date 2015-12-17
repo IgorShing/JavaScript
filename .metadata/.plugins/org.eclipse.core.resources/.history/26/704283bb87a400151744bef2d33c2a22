@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+
+if (typeof (Calculation) === "undefined")
+{
+	Calculation = {};
+}
+
+function runExample(){
+	
+}
+
+function User(){
+	
+	var firstName;
+	var surname;
+	
+	this.setFirstName = function(newName){
+		
+	}
+}
+
+Calculation.Profit = function(input){
+	return 100*input;
+}

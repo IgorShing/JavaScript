@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>Examples</title>
+			<script src = "examples.js" defer></script>
+			<link rel="stylesheet" href="example_styles.css">
+			
+			<style>
+				  body {
+				    margin: 10px
+				  }
+			</style>
+		
+	</head>
+	<body>
+		
+		 <form>
+			First name:<br>
+			<input type="text" name="firstname">
+			<br>
+			
+			Last name:<br>
+			<input type="text" name="lastname">
+			
+			<br>
+			<input type = "checkbox" name = "registered" onchange = "onRegisteredChange()">Registered
+		 </form> 
+		 
+		 <div id = 'message' class='message'>
+			Some text goes here.
+		</div>
+		
+		
+
+
+
+		  <script>
+		    var computedStyle = getComputedStyle(document.body);
+		    alert( computedStyle.marginTop ); // выведет отступ в пикселях
+		    alert( computedStyle.color ); // выведет цвет
+		  </script>
+
+	</body>
+</html>
