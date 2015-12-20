@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.title{
+	background-color: green;
+}
+
+.panel{
+	background-color: white;
+	width: 150;
+	height: 60;
+	border: 1px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.panelHeader{
+	background-color: blue;
+	width: 150;
+	height: 25;	
+	color: white;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.panelContent{
+	background-color: white;
+	width: 150;
+	height: 35;
+	border-radius: 0px 0px 5px 5px;
+}
