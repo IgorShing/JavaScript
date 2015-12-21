@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+    <script src = task2_2.js defer></script>
+</head>
+
+<body>
+  <form name="search">
+    <label>Поиск по сайту:
+      <input name="search" type="text">
+    </label>
+    <input value="Искать!" type="submit">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Поиск по посетителям:
+    <table id="age-table">
+      <tbody><tr>
+        <td>Возраст:</td>
+        <td id="age-list">
+          <label>
+            <input name="age" value="young" type="radio">до 18</label>
+          <label>
+            <input name="age" value="mature" type="radio">18-50</label>
+          <label>
+            <input name="age" value="senior" type="radio">более 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Дополнительно:</td>
+        <td>
+          <input name="info[0]" type="text">
+          <input name="info[1]" type="text">
+          <input name="info[2]" type="text">
+        </td>
+      </tr>
+
+    </tbody></table>
+
+    <input value="Искать!" type="submit">
+  </form>
+
+
+</body></html>
