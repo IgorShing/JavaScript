@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyMenu</title>
+	<link rel = "stylesheet" href = "menuStyles.css">
+	<script src = "menuScript.js" />
+
+var timer = 0;var item = 0;
+//function
+for opening of submenu elements
+function openelement(num){
+//checks whether there is an open submenu
+and makes it invisible if(item)
+item.style.visibility = 'hidden';
+//shows the chosen submenu element
+item = document.getElementById(num); item.style.visibility = 'visible'; }
+// function for closing
+of submenu elements
+function closeelement(){
+//closes the open submenu elements and loads the timer with 500
+mstimer = window.setTimeout('if(item) item.style.visibility = 'hidden';',500); }
+//function for keeping the submenu loaded after the end of the 500 ms
+timerfunction keepsubmenu(){ window.clearTimeout(timer);}
+//hides the visualized menu after clicking outside of its area and expiring of the loaded
+timerdocument.onclick = closeelement;
+</script>
+<!--END of CSS code-->
+</head>
+<body>
+<!--HTML code for the menu -->
+<ul id="mymenu">
+<li><a href="http://siteground.com/">Home</a></li>
+<li>
+<a href="http://www.siteground.com/tutorials/" onmouseover="openelement('menu2')">Tutorials</a>
+<ul id="menu2" onmouseover="keepsubmenu()" onmouseout="closeelement()">
+<a href="http://www.siteground.com/tutorials/cssbasics/index.htm">CSS</a>
+<a href="http://www.siteground.com/tutorials/flash/index.htm">Flash</a>
+</ul>
+</li>
+<li>
+<a href="#" onmouseover="openelement('menu3')" onmouseout="closeelement()">More</a>
+<ul id="menu3" onmouseover="keepsubmenu()" onmouseout="closeelement()">
+<a href="http://www.siteground.com/about_us.htm">About Us</a>
+<a href="http://www.siteground.com/contact_us.htm">Contact Us</a>
+</ul>
+</li>
+</ul>
+<div >
+</div>
+<!--the end of the HTML code for the menu -->
+</body>
+</html>

@@ -4,8 +4,9 @@
 
 $(function(){
 	
-	$("#btn1").on('click', function(){
-		$("#panel_1 .panelContent").html("New content");
+	$(".panel-button").on('click', function(){
+		var panelId = $(this).attr('data-panelid');
+		$('#' + panelId).toggle();
 	});
 
 });

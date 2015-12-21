@@ -1,9 +1,0 @@
-/**
- * 
- */
-function showMessage(N){
-	var sum = 0;
-	for (i=0; i < N; i++){
-		
-	}
-}

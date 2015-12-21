@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;JavaScriptTutorials/Prototype/examples.html&apos; to &apos;prototype.html&apos;" description="Rename resource &apos;examples.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Prototype/examples.html" name="prototype.html" stamp="1449729192850" updateReferences="true"/>
-</session>

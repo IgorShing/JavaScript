@@ -14,7 +14,9 @@ function runExample(){
 	user.setFirstName("Peter");
 	user.setSurname("Johnson");
 	
-	alert(user.getFullName());
+	
+	var calc = new Calculation.Profit(200);
+	alert(calc);
 }
 
 function User(){

@@ -2,17 +2,19 @@
  * 
  */
 function Machine(power){
-	var enabled = false;
+	
+	this._enabled = false;
 	// Protected field
 	this._power = power;
 	
+	var self = this;	
 	
 	this.enable = function(){
-		enabled = true;
+		self._enabled = true;
 	};
 	
 	this.disable = function(){
-		enabled = true;
+		self._enabled = false;
 	}
 }
 
@@ -33,10 +35,9 @@ function CoffeeMachine(power){
 	
 	var parentEnable = this.enable;
 	this.enable = function(){
-		parentEnable.call(this);
+		parentEnable();
 		this.run();
 	}
-	
 }
 
 function runCoffeeMachineExample(){
@@ -50,7 +51,4 @@ function runCoffeeMachineExample(){
 	coffeeMachine.setWaterAmount(waterAmount);
 	alert(coffeeMachine._power);
 	coffeeMachine.disable();
-	
 }
-
-
