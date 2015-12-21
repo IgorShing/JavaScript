@@ -27,15 +27,29 @@ $(function(){
 		
 	// Tab Panel Widget
 	$('.tab-panels .tabs li').on('click', function(){
+		
+		// Find closest 
+		var $panel = $(this).closest('.tab-panels');
+		
+		$panel.find('.tabs li.active').removeClass('active');
+		
+		// Make a panel active
+		$(this).addClass('active');
+		
+		// Find what panel to show
 		var panelToShow = $(this).attr('rel');
 		
-		$('.tab-panels .subpanel.active').slideUp(300, function(){
+		// Hide the active panel and show the selected
+		$panel.find('.subpanel.active').slideUp(300, showNextPanel);
+		
+		function showNextPanel(){
+			$(this).removeClass('active');
 			
 			$('#' + panelToShow).slideDown(300, function(){
-				alert($(this).attr('rel'));
+				$(this).addClass('active');
 			});
-			
-		});
+		};
+		
 	})
 	
 });

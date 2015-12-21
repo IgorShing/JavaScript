@@ -34,7 +34,6 @@
 }
 
 
-
 /* Tab Panel Widget */
 .tab-panels ul {
 	margin: 0;
@@ -51,6 +50,10 @@
 	color: #fff;
 	font-weight: 200;
 	cursor: pointer;
+}
+
+.active{
+	background: #666;
 }
 
 .tab-panels ul li:hover{
