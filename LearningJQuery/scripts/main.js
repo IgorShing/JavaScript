@@ -19,9 +19,23 @@ $(function(){
 	});
 
 	// Clicks on list elements
-	$('li').on('click', function(){
-		$(this).removeClass('special')
-		$(this).siblings().addClass('special');
+	$('.sublist li').on('click', function(){
+		if ($(this).parent().is('.sublist')){
+			$(this).hide();
+		}
 	});
+		
+	// Tab Panel Widget
+	$('.tab-panels .tabs li').on('click', function(){
+		var panelToShow = $(this).attr('rel');
+		
+		$('.tab-panels .subpanel.active').slideUp(300, function(){
+			
+			$('#' + panelToShow).slideDown(300, function(){
+				alert($(this).attr('rel'));
+			});
+			
+		});
+	})
 	
 });
